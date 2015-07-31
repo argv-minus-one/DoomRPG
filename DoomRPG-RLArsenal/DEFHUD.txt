@@ -40,8 +40,16 @@ statusbar fullscreen, fullscreenoffsets
 		drawimage ammoicon2, -16, -24, centerbottom, 0, 0, alternateonfail
 		drawimage ammoicon1, -16, -24, centerbottom;
 		drawnumber 5, BIGFONT, white, ammo2, drawshadow, Interpolate(4096), -36, -56;
-		drawbar "AmmoF", "AmmoE", ammo2, horizontal, Interpolate(4096), -70, -43;
 		drawnumber 5, BIGFONT, white, ammo1, drawshadow, Interpolate(4096), -36, -36;
+		usessecondaryammo
+		{
+			drawbar "AmmoF", "AmmoE", ammo2, horizontal, Interpolate(4096), -70, -43;
+		}
+		else usesammo
+		{
+			// Don't draw the ammo bar for weapons that have a magazine (i.e. most of them) or don't use ammo at all (chainsaw, nano, etc), but do draw it for those that draw ammo directly from the player's ammo pool.
+			drawbar "AmmoF", "AmmoE", ammo1, horizontal, Interpolate(4096), -70, -23;
+		}
 	}
 	
 	// Current Inventory Item
