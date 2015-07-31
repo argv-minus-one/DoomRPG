@@ -12,7 +12,10 @@ statusbar fullscreen, fullscreenoffsets
 		drawnumber 5, BIGFONT, red, globalarray(52), drawshadow, Interpolate(4096), 64, -32;
 	}
 	else
+	{
 		drawnumber 5, BIGFONT, red, health, drawshadow, Interpolate(4096), 64, -18;
+		drawbar "OwnHPF", "OwnHPE", health, horizontal, Interpolate(4096), 30, -5;
+	}
 	
 	// Armor
 	drawimage armoricon, 18, -48, centerbottom;
@@ -29,9 +32,14 @@ statusbar fullscreen, fullscreenoffsets
 	// Ammo
 	drawimage ammoicon1, -16, -24, centerbottom;
 	drawnumber 5, BIGFONT, white, ammo1, drawshadow, Interpolate(4096), -36, -36;
+	usesammo
+	{
+		drawbar "AmmoF", "AmmoE", ammo1, horizontal, Interpolate(4096), -70, -23;
+	}
 	usessecondaryammo
 	{
-		drawnumber 5, BIGFONT, white, ammo2, drawshadow, Interpolate(4096), -36, -48;
+		drawnumber 5, BIGFONT, white, ammo2, drawshadow, Interpolate(4096), -36, -56;
+		drawbar "AmmoF", "AmmoE", ammo2, horizontal, Interpolate(4096), -70, -43;
 	}
 	
 	// Current Inventory Item
