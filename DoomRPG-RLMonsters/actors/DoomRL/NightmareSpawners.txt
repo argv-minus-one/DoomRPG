@@ -1,0 +1,101 @@
+actor DRPGNightmareFormerHumanSpawner : RandomSpawner
+{
+    DropItem "RLFormerHumanSpawner", 255, 2
+    DropItem "DRPGHellFormerHumanSpawner", 255, 1
+}
+
+actor DRPGNightmareFormerSergeantSpawner : RandomSpawner
+{
+    DropItem "RLFormerSergeantSpawner", 255, 2
+    DropItem "DRPGHellFormerSergeantSpawner", 255, 1
+}
+
+actor DRPGNightmareFormerCommandoSpawner : RandomSpawner
+{
+    DropItem "RLFormerCommandoSpawner", 255, 2
+    DropItem "DRPGHellFormerCommandoSpawner", 255, 1
+}
+
+actor DRPGNightmareImpSpawner : RandomSpawner
+{
+    DropItem "RLImpSpawner", 255, 2
+    DropItem "DRPGHellImpSpawner", 255, 1
+}
+
+actor DRPGNightmareDemonSpawner : RandomSpawner
+{
+    DropItem "RLDemonSpawner", 255, 2
+    DropItem "DRPGHellDemonSpawner", 255, 1
+}
+
+actor DRPGNightmareSpectreSpawner : RandomSpawner
+{
+    DropItem "RLSpectreSpawner", 255, 2
+    DropItem "DRPGHellSpectreSpawner", 255, 1
+}
+
+actor DRPGNightmareLostSoulSpawner : RandomSpawner
+{
+    DropItem "RLLostSoulSpawner", 255, 2
+    DropItem "DRPGHellLostSoulSpawner", 255, 1
+}
+
+actor DRPGNightmareCacodemonSpawner : RandomSpawner
+{
+    DropItem "RLCacodemonSpawner", 255, 2
+    DropItem "DRPGHellCacodemonSpawner", 255, 1
+}
+
+actor DRPGNightmareHellKnightSpawner : RandomSpawner
+{
+    DropItem "RLHellKnightSpawner", 255, 2
+    DropItem "DRPGHellHellKnightSpawner", 255, 1
+}
+
+actor DRPGNightmareBaronOfHellSpawner : RandomSpawner
+{
+    DropItem "RLBaronOfHellSpawner", 255, 2
+    DropItem "DRPGHellBaronOfHellSpawner", 255, 1
+}
+
+actor DRPGNightmareArachnotronSpawner : RandomSpawner
+{
+    DropItem "RLArachnotronSpawner", 255, 2
+    DropItem "DRPGHellArachnotronSpawner", 255, 1
+}
+
+actor DRPGNightmarePainElementalSpawner : RandomSpawner
+{
+    DropItem "RLPainElementalSpawner", 255, 2
+    DropItem "DRPGHellPainElementalSpawner", 255, 1
+}
+
+actor DRPGNightmareRevenantSpawner : RandomSpawner
+{
+    DropItem "RLRevenantSpawner", 255, 2
+    DropItem "DRPGHellRevenantSpawner", 255, 1
+}
+
+actor DRPGNightmareMancubusSpawner : RandomSpawner
+{
+    DropItem "RLMancubusSpawner", 255, 2
+    DropItem "DRPGHellMancubusSpawner", 255, 1
+}
+
+actor DRPGNightmareArchvileSpawner : RandomSpawner
+{
+    DropItem "RLArchvileSpawner", 255, 2
+    DropItem "DRPGHellArchvileSpawner", 255, 1
+}
+
+actor DRPGNightmareCyberdemonSpawner : RandomSpawner
+{
+    DropItem "RLCyberdemonSpawner", 255, 2
+    DropItem "DRPGHellCyberdemonSpawner", 255, 1
+}
+
+actor DRPGNightmareSpiderMastermindSpawner : RandomSpawner
+{
+    DropItem "RLSpiderMastermindSpawner", 255, 2
+    DropItem "DRPGHellSpiderMastermindSpawner", 255, 1
+}
