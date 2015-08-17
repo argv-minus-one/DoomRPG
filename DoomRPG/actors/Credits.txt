@@ -40,6 +40,7 @@ actor DRPGCredits1 : CustomInventory 20020
     {
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
+        TNT1 A 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 5)
         CRED A -1 Bright
         Stop
     Pickup:
@@ -58,6 +59,7 @@ actor DRPGCredits5 : DRPGCredits1 20021
     {
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
+        TNT1 A 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 10)
         CRED B -1 Bright
         Stop
     Pickup:
@@ -76,6 +78,7 @@ actor DRPGCredits10 : DRPGCredits1 20022
     {
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
+        TNT1 A 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 20)
         CRED C -1 Bright
         Stop
     Pickup:
@@ -93,6 +96,7 @@ actor DRPGCredits20 : DRPGCredits1 20023
     {
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
+        TNT1 A 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 40)
         CRED D -1 Bright
         Stop
     Pickup:
@@ -110,6 +114,7 @@ actor DRPGCredits50 : DRPGCredits1 20024
     {
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
+        TNT1 A 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 70)
         CRED E -1 Bright
         Stop
     Pickup:
@@ -127,6 +132,7 @@ actor DRPGCredits100 : DRPGCredits1 20025
     {
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
+        TNT1 AA 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 100)
         CRED F -1 Bright
         Stop
     Pickup:
@@ -145,8 +151,9 @@ actor DRPGCredits1000 : DRPGCredits1 20026
     {
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
+        TNT1 AA 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 150)
         CRED ABCDEFEDCB 2 Bright
-        Goto Spawn+1
+        Goto Spawn+2
     Pickup:
         TNT1 A 0 A_GiveInventory("DRPGCredits", 1000)
         TNT1 A 0 A_SpawnItemEx("DRPGCreditsEmpty", 0, 0, 48)
