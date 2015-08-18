@@ -568,6 +568,8 @@ script void TurretLoop() enter
             SetActorProperty(Player.Turret.TID, APROP_Health, Health);
         };
         
+        Player.Turret.Health = Health;
+        
         // Despawn the turret if itself or the owning player dies
         if (GetActorProperty(Player.TID, APROP_Health) <= 0 || GetActorProperty(Player.Turret.TID, APROP_Health) <= 0)
         {
@@ -812,7 +814,6 @@ script void TurretLoop() enter
         
         // Post-health check
         PrevHealth = Health;
-        Player.Turret.Health = Health;
     };
     
     Delay(1);
