@@ -77,7 +77,6 @@ actor DRPGCredits10 : DRPGCredits1 20022
     Spawn:
         TNT1 A 0 NoDelay ACS_NamedExecuteAlways("ItemInit", 0)
         TNT1 A 0 A_SpawnItemEx("DRPGHealthBonusRandomizer", 0, 0, 0, random(-4, 4), random(-4, 4), random(-4, -1), 0, 0, 250, tid)
-        TNT1 A 0 A_DropItem("DRPGHealthBonusRandomizer", -1, 15)
         CRED C -1 Bright
         Stop
     Pickup:
